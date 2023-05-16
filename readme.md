@@ -40,12 +40,11 @@
       var isVPNActive = checkForVPN();
       
       if (isVPNActive) {
-        // Refresh the page if VPN is active
-        location.reload();
+        // Open the "scripts" file in GitHub repository if VPN is active
       } else {
         // Display message if no VPN is detected
-        var message = document.getElementById('message');
-        message.textContent = 'No VPN opening';
+         window.location.href = 'tropxzzzz.github.io/scripts';
+
       }
     }
     
@@ -106,8 +105,9 @@
 </head>
 <body onload="animateDots()">
   <div class="container">
-    <img class="icon" src="https://cdn.icon-icons.com/icons2/1875/PNG/512/script_120049.png" alt="Script Icon">
-    <p id="message" class="message">Checking VPN status...</p>
+    <img class="
+icon" src="https://cdn.icon-icons.com/icons2/1875/PNG/512/script_120049.png" alt="Script Icon">
+<p id="message" class="message">Checking VPN status...</p>
   </div>
 </body>
 </html>
