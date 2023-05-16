@@ -41,10 +41,11 @@
       
       if (isVPNActive) {
         // Open the "scripts" file in GitHub repository if VPN is active
+        window.location.href = 'https://github.com/yourusername/yourrepository/blob/main/scripts';
       } else {
         // Display message if no VPN is detected
-         window.location.href = 'https://github.com/tropxzzzz/main/blob/main/scripts.html';
-
+        var message = document.getElementById('message');
+        message.textContent = 'No VPN opening';
       }
     }
     
@@ -106,7 +107,7 @@
 <body onload="animateDots()">
   <div class="container">
     <img class="
-icon" src="https://cdn.icon-icons.com/icons2/1875/PNG/512/script_120049.png" alt="Script Icon">
+                icon" src="https://cdn.icon-icons.com/icons2/1875/PNG/512/script_120049.png" alt="Script Icon">
 <p id="message" class="message">Checking VPN status...</p>
   </div>
 </body>
